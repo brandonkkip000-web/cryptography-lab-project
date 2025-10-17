@@ -1,15 +1,3 @@
-"""Utility package exposing cryptographic helpers for the project.
-
-Modules
--------
-- bcrypt_hash: bcrypt password hashing and verification
-- sha256_digest: streaming SHA-256 file digest
-- aes_cipher: AES-256 file encryption/decryption (GCM mode)
-- rsa_cipher: RSA key generation and OAEP key wrapping
-- signatures: RSA-PSS digital signatures
-- utils: base64 helpers and metadata helpers
-"""
-
 from .bcrypt_hash import hash_password, verify_password
 from .sha256_digest import compute_sha256
 from .aes_cipher import encrypt_file_aes, decrypt_file_aes

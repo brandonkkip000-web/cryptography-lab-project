@@ -1,16 +1,3 @@
-"""Main demo for cryptography-lab-project.
-
-Runs an end-to-end demonstration:
-  1) bcrypt password hashing and verification
-  2) SHA-256 digest of a sample file in uploads/
-  3) AES-256-GCM file encryption
-  4) RSA keypair generation
-  5) RSA-OAEP wrapping of AES key
-  6) Decryption and integrity verification
-  7) Optional RSA-PSS signature over metadata
-Includes simple timing outputs for educational purposes.
-"""
-
 from __future__ import annotations
 
 import os

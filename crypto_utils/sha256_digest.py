@@ -1,8 +1,3 @@
-"""Streaming SHA-256 file digest utilities.
-
-Uses hashlib to compute a digest in chunks to support large files efficiently.
-"""
-
 from __future__ import annotations
 
 import hashlib

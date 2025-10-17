@@ -1,15 +1,3 @@
-"""AES-256 file encryption/decryption helpers using GCM mode.
-
-AES-GCM provides confidentiality and integrity via an authentication tag.
-We stream file contents in chunks to handle large files efficiently.
-
-File format written by encrypt_file_aes:
-    [12-byte nonce][16-byte tag][ciphertext...]
-
-This layout keeps the file self-contained and easy to parse. Metadata (JSON)
-can store base64 versions of nonce and tag for additional context.
-"""
-
 from __future__ import annotations
 
 import os

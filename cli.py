@@ -1,13 +1,3 @@
-"""Command Line Interface for cryptography-lab-project.
-
-Commands:
-  - gen-keys: Generate RSA keypair and save to keys/private.pem and keys/public.pem
-  - hash-pass "password": Hash a password with bcrypt
-  - digest <file>: Compute SHA-256 digest
-  - encrypt <file> --pubkey keys/public.pem: Encrypt file with AES-256-GCM and wrap key with RSA
-  - decrypt <file.enc> --privkey keys/private.pem: Decrypt file and verify tag
-"""
-
 from __future__ import annotations
 
 import argparse
